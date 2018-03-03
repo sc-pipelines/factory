@@ -8,4 +8,5 @@
     <include file="/schema/product-management.sql"/>
     <include file="/schema/production-planning.sql"/>
     <include file="/schema/shortages-prediction.sql"/>
+    <include file="/schema/quartz-scheduler.sql"/>
 </databaseChangeLog>

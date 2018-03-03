@@ -47,3 +47,14 @@ CREATE TABLE demand_forecasting.demand_review (
 
 --changeset michaluk.michal:2.rename.review.table
 ALTER TABLE demand_forecasting.demand_review RENAME TO required_review;
+
+--changeset michaluk.michal:3.create.document.table
+CREATE TABLE demand_forecasting."document" (
+    id serial NOT NULL PRIMARY KEY,
+    ref_no character varying(64) NOT NULL,
+    original_uri character varying(1024) NOT NULL,
+    stored_uri character varying(1024) NOT NULL,
+    "document" json NOT NULL,
+    "saved" timestamp without time zone NOT NULL,
+    clean_after timestamp without time zone
+);
