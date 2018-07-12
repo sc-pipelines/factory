@@ -1,4 +1,4 @@
-pipeline:
+build:
   main_module: app-monolith
 test:
   # list of required services
